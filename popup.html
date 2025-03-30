@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>抖音视频链接导出</h2>
+    <div class="filter-section">
+      <label for="minLikes">最小点赞数：</label>
+      <input type="number" id="minLikes" placeholder="输入点赞数" min="0">
+    </div>
+    <div class="button-group">
+      <button id="getLinks">获取链接</button>
+      <button id="copyLinks" disabled>复制到剪贴板</button>
+      <button id="downloadLinks" disabled>下载文本文件</button>
+    </div>
+    <div id="result"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

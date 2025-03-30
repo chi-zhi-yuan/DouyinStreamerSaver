@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "抖音视频链接导出",
+  "version": "1.0",
+  "description": "获取抖音博主下的所有视频链接并导出",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.douyin.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+} 
